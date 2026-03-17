@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wavelength Animal Communication Science — advancing our understanding of animal communication through field biology, global acoustic datasets, and data science to improve welfare and deepen our connection to the natural world.">
+    <meta property="og:title" content="Wavelength | Animal Communication Science">
+    <meta property="og:description" content="What if we could understand them? We study how animals communicate to improve welfare, guide conservation, and deepen human connection to the natural world.">
+    <meta property="og:type" content="website">
+    <title>Wavelength | Animal Communication Science</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ═══════════════════════════════════════
+         NAVIGATION
+    ═══════════════════════════════════════ -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <svg width="28" height="18" viewBox="0 0 28 18" fill="none" class="logo-wave-svg" aria-hidden="true">
+                    <path d="M0 9 C3.5 2, 7 2, 10.5 9 C14 16, 17.5 16, 21 9 C24.5 2, 26 2, 28 9" stroke="#e84393" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                </svg>
+                <span>Wavelength</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#mission">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#connect" class="nav-cta">Get Involved</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════
+         HERO
+    ═══════════════════════════════════════ -->
+    <section id="hero">
+        <canvas id="wave-canvas" aria-hidden="true"></canvas>
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-content">
+            <p class="hero-eyebrow">Animal Communication Science</p>
+            <h1 class="hero-title">Wavelength</h1>
+            <p class="hero-question">What if we could understand them?</p>
+            <p class="hero-sub">The sounds of nature contain boundless untapped information.<br>Animals communicate to convey meaning. We're listening.</p>
+            <div class="hero-actions">
+                <a href="#research" class="btn btn-primary">Explore Our Research</a>
+                <a href="#connect" class="btn btn-ghost">Support Our Work</a>
+            </div>
+        </div>
+        <a href="#mission" class="scroll-down" aria-label="Scroll to next section">
+            <svg width="20" height="28" viewBox="0 0 20 28" fill="none">
+                <path d="M10 2v20M3 16l7 8 7-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         MISSION & VISION
+    ═══════════════════════════════════════ -->
+    <section id="mission">
+        <div class="section-container">
+            <div class="mission-grid">
+                <div class="mission-block mission-primary reveal">
+                    <span class="section-label">Our Mission</span>
+                    <p class="mission-text">We integrate field biology, global acoustic datasets, and advanced data science to understand animal communication — grounding our work in what matters to animals and applying our findings to innovate welfare and engage communities.</p>
+                </div>
+                <div class="mission-block mission-secondary reveal reveal-delay-1">
+                    <span class="section-label">Our Vision</span>
+                    <p class="mission-text">A world where understanding animal voices drives compassionate action that centers welfare, guides conservation, and deepens our connection to the natural world around us.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         WHY IT MATTERS
+    ═══════════════════════════════════════ -->
+    <section id="impact">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <span class="section-label">Why It Matters</span>
+                <h2>Can these signals change our world?</h2>
+            </div>
+            <div class="impact-grid">
+                <div class="impact-card reveal">
+                    <div class="impact-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                            <path d="M16 3L29 26H3L16 3Z" stroke="#e84393" stroke-width="1.8" fill="none" stroke-linejoin="round"/>
+                            <line x1="16" y1="13" x2="16" y2="19" stroke="#e84393" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="16" cy="22" r="1.2" fill="#e84393"/>
+                        </svg>
+                    </div>
+                    <h3>Early Warning</h3>
+                    <p>Many species can sense disaster hours, days, even weeks ahead of human systems. During the 2004 Tsunami, animals fled to higher ground while our systems failed. Understanding their signals could save lives.</p>
+                </div>
+                <div class="impact-card reveal reveal-delay-1">
+                    <div class="impact-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                            <path d="M16 28C16 28 4 20 4 11a7 7 0 0 1 12-4.9A7 7 0 0 1 28 11c0 9-12 17-12 17Z" stroke="#a855f7" stroke-width="1.8" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3>Welfare Innovation</h3>
+                    <p>Distress and pain alter how animals communicate, but we're limited in what we can observe. Acoustic monitoring offers a non-invasive, scalable window into animal wellbeing — letting us help them by listening.</p>
+                </div>
+                <div class="impact-card reveal reveal-delay-2">
+                    <div class="impact-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                            <circle cx="16" cy="16" r="12" stroke="#2dd4bf" stroke-width="1.8"/>
+                            <path d="M10 16c2-4 10-4 12 0" stroke="#2dd4bf" stroke-width="1.8" stroke-linecap="round"/>
+                            <circle cx="12" cy="12" r="1.5" fill="#2dd4bf"/>
+                            <circle cx="20" cy="12" r="1.5" fill="#2dd4bf"/>
+                        </svg>
+                    </div>
+                    <h3>Conservation Action</h3>
+                    <p>The discovery of humpback whale song helped end commercial whaling. When we connect with animal voices, we act. Understanding communication deepens empathy and galvanizes protection of the species that share our world.</p>
+                </div>
+                <div class="impact-card reveal reveal-delay-3">
+                    <div class="impact-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                            <circle cx="16" cy="16" r="12" stroke="#4ade80" stroke-width="1.8"/>
+                            <path d="M10 13c2-3 10-3 12 2s-1 8-6 8-8-4-6-10" stroke="#4ade80" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3>Disease Detection</h3>
+                    <p>Disease alters how animals sound. If we can detect these acoustic signatures, we can identify and mitigate spread — across wildlife populations, livestock, and companion animals — before it's too late.</p>
+                </div>
+            </div>
+            <div class="challenge-block reveal">
+                <p class="challenge-stat">Only a small fraction of the species that communicate have been studied.</p>
+                <p class="challenge-sub">Technology is advancing faster than the research needed to guide it. We're here to close that gap — connecting biology, data science, and creative outreach to transform how the world listens.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         RESEARCH PILLARS
+    ═══════════════════════════════════════ -->
+    <section id="research">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <span class="section-label">Our Approach</span>
+                <h2>Three pillars of research</h2>
+                <p class="section-intro">We leverage advancing technology and our strengths in biology, data science, ecology, and creative outreach to transform how we listen to, use, and connect with animal signals.</p>
+            </div>
+            <div class="pillars-grid">
+                <div class="pillar-card reveal">
+                    <div class="pillar-number">01</div>
+                    <h3 class="pillar-title">Interpret</h3>
+                    <p class="pillar-lead">Understand what animals are saying</p>
+                    <ul class="pillar-list">
+                        <li>Targeted field research across diverse species</li>
+                        <li>Cross-species global acoustic dataset analysis</li>
+                        <li>Mapping calls to behavioral function and context</li>
+                        <li>Vocal learning, repertoire structure, and social dynamics</li>
+                    </ul>
+                </div>
+                <div class="pillar-card pillar-featured reveal reveal-delay-1">
+                    <div class="pillar-number">02</div>
+                    <h3 class="pillar-title">Innovate</h3>
+                    <p class="pillar-lead">Build evidence-based tools for welfare</p>
+                    <ul class="pillar-list">
+                        <li>Acoustic indicators of disease, distress, and pain</li>
+                        <li>Scalable early warning systems using animal signals</li>
+                        <li>Open-source monitoring tools for researchers</li>
+                        <li>Non-invasive, cost-effective solutions for the field</li>
+                    </ul>
+                </div>
+                <div class="pillar-card reveal reveal-delay-2">
+                    <div class="pillar-number">03</div>
+                    <h3 class="pillar-title">Engage</h3>
+                    <p class="pillar-lead">Partner with the public in discovery</p>
+                    <ul class="pillar-list">
+                        <li>Creative science communication and storytelling</li>
+                        <li>Community science and participatory research</li>
+                        <li>Open-source tools to tune into the natural world</li>
+                        <li>Science exhibitions and public education programs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         FEATURED PROJECT
+    ═══════════════════════════════════════ -->
+    <section id="project">
+        <div class="section-container">
+            <div class="project-inner">
+                <div class="project-text reveal">
+                    <span class="section-label">Featured Research</span>
+                    <h2>Detecting disease and distress from calls alone</h2>
+                    <p class="project-desc">Acoustic monitoring is cost-effective, non-invasive, and can track thousands of animals at once. Our foundational project tests whether we can detect disease and stress in animals by listening — creating a scalable window into animal welfare that does not require capture or laboratory analysis.</p>
+                    <div class="project-details">
+                        <div class="project-detail">
+                            <strong>Focus Species</strong>
+                            <span>15 species of neotropical frogs</span>
+                        </div>
+                        <div class="project-detail">
+                            <strong>Setting</strong>
+                            <span>Field & lab at the Smithsonian Tropical Research Institute</span>
+                        </div>
+                        <div class="project-detail">
+                            <strong>Validation</strong>
+                            <span>Acoustic analysis paired with stress hormone &amp; disease samples</span>
+                        </div>
+                        <div class="project-detail">
+                            <strong>Application</strong>
+                            <span>Open-source app applied to cross-species global acoustic datasets</span>
+                        </div>
+                    </div>
+                    <div class="project-chain">Early detection &rarr; early intervention &rarr; saves resources and lives</div>
+                </div>
+                <div class="project-visual reveal reveal-delay-1">
+                    <div class="project-badge">
+                        <div class="badge-inner">
+                            <span class="badge-num">15</span>
+                            <span class="badge-label">frog species</span>
+                        </div>
+                    </div>
+                    <div class="project-institution">
+                        <span>In partnership with</span>
+                        <strong>Smithsonian Tropical<br>Research Institute</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         TEAM
+    ═══════════════════════════════════════ -->
+    <section id="team">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <span class="section-label">Who We Are</span>
+                <h2>Science, technology, and nature — united</h2>
+                <p class="section-intro">Our growing team brings together field biology, behavioral neuroscience, computational science, and creative communication, united by a shared commitment to understanding and protecting animal life.</p>
+            </div>
+            <div class="team-stats reveal">
+                <div class="stat">
+                    <span class="stat-num">400+</span>
+                    <span class="stat-label">Scientific publications</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">250+</span>
+                    <span class="stat-label">Public presentations</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">25+</span>
+                    <span class="stat-label">Novel tools implemented</span>
+                </div>
+            </div>
+            <div class="team-grid">
+
+                <!-- Erin Wall -->
+                <div class="team-card reveal">
+                    <div class="team-photo team-photo-erin">
+                        <!-- To add photo: replace the initials div below with:
+                             <img src="images/team/erin-wall.jpg" alt="Erin Wall"> -->
+                        <span class="team-initials">EW</span>
+                    </div>
+                    <div class="team-info">
+                        <h3>Erin Wall</h3>
+                        <p class="team-role">Co-Founder &amp; CEO</p>
+                        <p class="team-focus">Research Lead: <em>Engage</em></p>
+                        <p class="team-bio">Expertise in field &amp; lab operations, science communication, and behavioral neuroscience &amp; ecology. PhD in Neuroscience. Research on humpback whale song development and perception in female songbirds. Explorers Club Fjallraven Field Grant and Mitacs Elevate Postdoctoral Fellowship recipient.</p>
+                    </div>
+                </div>
+
+                <!-- Logan James -->
+                <div class="team-card reveal reveal-delay-1">
+                    <div class="team-photo team-photo-logan">
+                        <!-- To add photo: replace the initials div below with:
+                             <img src="images/team/logan-james.jpg" alt="Logan James"> -->
+                        <span class="team-initials">LJ</span>
+                    </div>
+                    <div class="team-info">
+                        <h3>Logan James</h3>
+                        <p class="team-role">Co-Founder</p>
+                        <p class="team-focus">Research Lead: <em>Interpret</em></p>
+                        <p class="team-bio">Expertise in comparative bioacoustic analysis, statistics, experimental design, and data visualization. PhD in Biology, BSc Biology with a minor in Linguistics. Smithsonian Postdoctoral Fellow, Earth Species Project Research Fellow, and AAAS Program for Excellence in Science awardee. Research spans birds, frogs, bats, and humans.</p>
+                    </div>
+                </div>
+
+                <!-- Lee Wall -->
+                <div class="team-card reveal reveal-delay-2">
+                    <div class="team-photo team-photo-lee">
+                        <!-- To add photo: replace the initials div below with:
+                             <img src="images/team/lee-wall.jpg" alt="Lee Wall"> -->
+                        <span class="team-initials">LW</span>
+                    </div>
+                    <div class="team-info">
+                        <h3>Lee Wall</h3>
+                        <p class="team-role">Co-Founder</p>
+                        <p class="team-focus">Research Lead: <em>Innovate</em></p>
+                        <p class="team-bio">Expertise in quantitative ecology, bio-mathematical modeling, biosecurity, and AI safety &amp; ethics. BSc in Applied &amp; Computational Mathematics. AI x Bio Research Fellow (ERA &amp; Cambridge Biosecurity Hub), FutureKind Fellow, and Open Philanthropy Career Development Fellow. Projects in ecosystem forecasting, coral reef recovery, and behavioral analysis.</p>
+                    </div>
+                </div>
+
+                <!-- Mike Ryan -->
+                <div class="team-card reveal reveal-delay-3">
+                    <div class="team-photo team-photo-mike">
+                        <!-- To add photo: replace the initials div below with:
+                             <img src="images/team/mike-ryan.jpg" alt="Mike Ryan"> -->
+                        <span class="team-initials">MR</span>
+                    </div>
+                    <div class="team-info">
+                        <h3>Mike Ryan</h3>
+                        <p class="team-role">Senior Advisor</p>
+                        <p class="team-focus">Clark Hubbs Regents Professor, UT Austin</p>
+                        <p class="team-bio">Senior Research Associate at the Smithsonian Tropical Research Institute. Recognized as a leading world authority in animal behavior. Distinguished Animal Behaviorist Lifetime Achievement Award and E.O. Wilson Naturalist Award recipient. Author of <em>A Taste for the Beautiful: The Evolution of Attraction</em>.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         NETWORK
+    ═══════════════════════════════════════ -->
+    <section id="network">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <span class="section-label">Our Network</span>
+                <h2>A global community of science</h2>
+                <p class="section-intro">We bring a worldwide network of collaborator labs, field sites, and invited expertise to our research — spanning institutions across North America, Europe, Africa, Asia, and beyond.</p>
+            </div>
+            <div class="network-logos reveal">
+                <span>McGill University</span>
+                <span>Smithsonian Tropical Research Institute</span>
+                <span>Florida State University</span>
+                <span>Yale University</span>
+                <span>University of Texas at Austin</span>
+                <span>Earth Species Project</span>
+                <span>University of Antwerp</span>
+                <span>Raincoast Conservation Foundation</span>
+                <span>Open Philanthropy</span>
+                <span>University of Windsor</span>
+                <span>CRBLM</span>
+                <span>Battelle</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         CONNECT
+    ═══════════════════════════════════════ -->
+    <section id="connect">
+        <div class="section-container">
+            <div class="connect-inner">
+                <div class="section-header reveal" style="margin-bottom: 20px;">
+                    <span class="section-label">Get Involved</span>
+                </div>
+                <h2 class="connect-heading reveal">There is a world of information<br>in animal communication.<br><span>It's time we listen.</span></h2>
+                <p class="connect-sub reveal">Whether you are a researcher, funder, or someone who loves the natural world, there are ways to be part of Wavelength.</p>
+                <div class="connect-options">
+                    <div class="connect-card reveal">
+                        <div class="connect-card-icon">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                                <circle cx="14" cy="14" r="11" stroke="#2dd4bf" stroke-width="1.8"/>
+                                <path d="M9 14h10M14 9v10" stroke="#2dd4bf" stroke-width="1.8" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3>Partner with Us</h3>
+                        <p>We welcome collaborations with researchers, institutions, and organizations who share our mission to understand and protect animal life.</p>
+                        <a href="mailto:info@wavelengthscience.org" class="btn btn-outline">Get in Touch</a>
+                    </div>
+                    <div class="connect-card connect-card-featured reveal reveal-delay-1">
+                        <div class="connect-card-icon">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                                <path d="M14 24C14 24 3 17 3 9a6 6 0 0 1 11-3.3A6 6 0 0 1 25 9c0 8-11 15-11 15Z" stroke="#e84393" stroke-width="1.8" fill="none"/>
+                            </svg>
+                        </div>
+                        <h3>Support Our Work</h3>
+                        <p>Help fund foundational research that can transform how humanity understands, protects, and connects with the animals we share this world with.</p>
+                        <a href="mailto:info@wavelengthscience.org" class="btn btn-primary">Donate</a>
+                    </div>
+                    <div class="connect-card reveal reveal-delay-2">
+                        <div class="connect-card-icon">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                                <rect x="3" y="7" width="22" height="15" rx="2" stroke="#818cf8" stroke-width="1.8"/>
+                                <path d="M3 11l11 7 11-7" stroke="#818cf8" stroke-width="1.8" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3>Stay Informed</h3>
+                        <p>Follow our progress as we grow, publish findings, and develop tools that bring the world of animal communication to everyone.</p>
+                        <a href="mailto:info@wavelengthscience.org" class="btn btn-outline">Follow Along</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         FOOTER
+    ═══════════════════════════════════════ -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <svg width="22" height="14" viewBox="0 0 28 18" fill="none" aria-hidden="true">
+                        <path d="M0 9 C3.5 2, 7 2, 10.5 9 C14 16, 17.5 16, 21 9 C24.5 2, 26 2, 28 9" stroke="#e84393" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+                    </svg>
+                    <span>Wavelength</span>
+                </div>
+                <p>Animal Communication Science Inc.</p>
+                <p class="footer-tagline">Listening to understand. Understanding to protect.</p>
+            </div>
+            <nav class="footer-links" aria-label="Footer navigation">
+                <a href="#mission">About</a>
+                <a href="#research">Research</a>
+                <a href="#project">Projects</a>
+                <a href="#team">Team</a>
+                <a href="#connect">Contact</a>
+            </nav>
+            <p class="footer-copy">© <span id="footer-year"></span> Wavelength Animal Communication Science Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
