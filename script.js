@@ -15,9 +15,9 @@ if (footerForm) {
   });
 }
 
-/* ─── Navbar scroll state ──────────────────────────────── */
+/* ─── Navbar scroll state (home page only — inner pages stay dark) ─ */
 const navbar = $('#navbar');
-if (navbar) {
+if (navbar && $('#waveformCanvas')) {
   const onNavScroll = () => navbar.classList.toggle('scrolled', window.scrollY > 40);
   window.addEventListener('scroll', onNavScroll, { passive: true });
   onNavScroll();
